@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Showing Alerts</title>
+        <style>
+            button{
+            background-color: rgb(0, 0, 0);
+            border-radius: 10px;
+            cursor: pointer;
+            height: 25px;
+            color: aquamarine;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            }
+        </style>
+	</head>
+	<body>
+		<button onclick="showFirstName()">First Name</button>
+		<button onclick="showLastName()">Last Name</button>
+		<button onclick="showFullName()">Full Name</button>
+		<script type="text/javascript">
+            let first = "Mohd";
+            let last = "Murtaza";
+            function showFirstName() {
+			    // Complete to show an alert with your first name 
+                alert(first)
+			}
+
+            function showLastName() {
+                // Complete to show an alert with your last name   
+                alert(last)
+            }
+
+            function showFullName() {
+                // Complete to show an alert with your full name (firstname lastname)
+                alert(first+" "+last)             
+            }
+        </script>
+	</body>
+</html>

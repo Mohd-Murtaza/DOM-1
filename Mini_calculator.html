@@ -1,0 +1,89 @@
+<!-- Create a mini calculator application, which has following functionalities
+Addition
+Subtraction
+Division
+Multiplication
+Your app should have
+Two input boxes which should take two numbers from the user.
+Four Buttons with following text content
+Add
+Subtract
+Divide
+Multiply
+When user enter 2 and 4 and clicks on multiply button, an alert should come with 8 as ans
+When user enter 8 and 4 and clicks on Divide button,an alert should come with 2 as ans -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINI CALCULATOR</title>
+</head>
+     <style>
+        button {
+            background-color: rgb(0, 0, 0);
+            border-radius: 10px;
+            cursor: pointer;
+            height: 25px;
+            color: aquamarine;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            
+        }
+        input{
+           border-radius: 20px;
+           background-color: rgb(255, 255, 255);
+           height: 20px;
+           box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        
+        }
+        h1{
+            color: rgb(162, 149, 34);
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+     </style>
+       <h1>MINI CALCULATOR</h1>
+<body>
+    <input type="number" id= "inp1">
+    <input type="number" id="inp2">
+    <br>
+    <br>
+    <button onclick="b1()">Add</button>
+    <button onclick="b2()">Subtract</button>
+    <button onclick="b3()">Multiplay</button>
+    <button onclick="b4()">Divide</button>
+</body>
+ <script>
+    const Input1 = document.getElementById("inp1");
+    const Input2 = document.getElementById("inp2");
+    function b1()
+    {
+        let num1 = Input1.value;
+        let num2 = Input2.value;
+        let res = Number(num1) + Number(num2);
+        alert(res)
+    }
+    function b2()
+    {
+        let num1 = Input1.value;
+        let num2 = Input2.value;
+        let res = Number(num1) - Number(num2);
+        alert(res)
+    }
+    function b3()
+    {
+        let num1 = Input1.value;
+        let num2 = Input2.value;
+        let res = Number(num1) * Number(num2);
+        alert(res)
+    }
+    function b4()
+    {
+        let num1 = Input1.value;
+        let num2 = Input2.value;
+        let res = Number(num1) / Number(num2);
+        alert(res)
+    }
+</script>
+</html>
